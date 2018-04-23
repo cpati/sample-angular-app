@@ -1,0 +1,28 @@
+<html>
+   
+   <head>
+      <title>Sample App</title>
+       <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="./app.css">
+  </head>
+   
+   <body>
+      
+      <div ng-app="sampleApp">
+         <div ng-include="'./templates/header.html'"></div>
+         <div class="container theme-showcase"
+          style="background-color: white;">
+            <div ng-view></div>
+          </div>
+         <div ng-include="'./templates/footer.html'"></div>
+    </div>
+      <script src = "./js/angular.min.js"></script>
+      <script src = "./js/angular-route.min.js"></script>
+      <script src = "./js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+      <script src="./app.js"></script>
+      <script src="./config/route.js"></script>      
+      <script src="./controllers/home-controller.js"></script>
+      <script src="./controllers/page1-controller.js"></script>
+      <script src="./controllers/page2-controller.js"></script>      
+   </body>
+</html>
